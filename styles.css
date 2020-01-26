@@ -5,7 +5,7 @@
 }
 
 body {
-    height:100vh;
+    height: 100vh;
     background: linear-gradient(rgb(161, 186, 255), rgb(21, 84, 179));
     font-family: sans-serif;
     color: #fff;
@@ -14,43 +14,43 @@ body {
 }
 
 .weather-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background: radial-gradient( rgba(210, 222, 255, 0.466), rgba(58, 110, 253, 0.466));
-    overflow:auto;
+    overflow: auto;
     border-radius: 30px;
-    margin:0px auto;
+    margin: 0px auto;
     margin-top: 40px;
     border: 2px solid rgba(255, 255, 255, 0.452);
     box-shadow: 0px 1px 5px rgb(75, 86, 189);
-    width:400px;
-    height:400px;
-    padding:20px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
 }
 
 .weather-temperature, .weather-unit {
-    display:inline-block;
+    display: inline-block;
     font-size: 50px;
-    flex-grow:1;
-    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.541);
+    flex-grow: 1;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.541);
     font-family: sans-serif;
+    cursor: pointer;
 }
 
 .weather-location {
-    order:2;
+    order: 2;
 }
 
 .weather-icon {
-    order:1;
-    
+    order: 1;
 }
 
 .temperature-container {
-    order:3;
+    order: 3;
 }
 
 .weather-description {
-    order:4;
+    order: 4;
 }
