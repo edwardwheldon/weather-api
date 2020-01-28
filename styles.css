@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(rgb(161, 186, 255), rgb(21, 84, 179));
+    background: linear-gradient(rgb(0, 0, 0), rgb(18, 32, 54));
     font-family: sans-serif;
     color: #fff;
     font-size: 20px;
@@ -25,9 +25,8 @@ body {
     height:400px;
     margin: 60px auto 0px auto;
     box-sizing: border-box;
-    box-shadow: 0px 1px 5px rgb(75, 86, 189);
-    border: 2px solid rgba(255, 255, 255, 0.452);
-    background: radial-gradient( rgba(210, 222, 255, 0.466), rgba(58, 110, 253, 0.466));
+    box-shadow: 0px 0px 16px rgb(0, 0, 0);
+    background: radial-gradient( rgba(140, 156, 201, 0.466), rgba(18, 34, 77, 0.466));
     border-radius: 14px;
 }
 
@@ -44,7 +43,7 @@ body {
     grid-area: location;
     text-align: center;
     padding-top:30px;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color: rgba(0, 0, 0, 0.315);
 }
 
 .icon-container {
@@ -63,5 +62,5 @@ body {
     grid-area: temperature;
     text-align: center;
     padding-top:40px;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color: rgba(0, 0, 0, 0.24);
 }
