@@ -14,20 +14,21 @@ body {
 }
 
 .weather-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: radial-gradient( rgba(210, 222, 255, 0.466), rgba(58, 110, 253, 0.466));
-    overflow: auto;
-    border-radius: 30px;
-    margin: 0px auto;
-    margin-top: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.452);
-    box-shadow: 0px 1px 5px rgb(75, 86, 189);
+    display: grid;
     width: 400px;
-    height: 400px;
-    padding: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "location location"
+    "icon description"
+    "temperature temperature";
+    /* justify-content: center;	 */
+    height:400px;
+    margin: 60px auto 0px auto;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px rgb(75, 86, 189);
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    background: radial-gradient( rgba(210, 222, 255, 0.466), rgba(58, 110, 253, 0.466));
+    border-radius: 14px;
 }
 
 .weather-temperature, .weather-unit {
@@ -40,17 +41,27 @@ body {
 }
 
 .weather-location {
-    order: 2;
+    grid-area: location;
+    text-align: center;
+    padding-top:30px;
+    background-color: rgba(0, 0, 0, 0.048);
 }
 
-.weather-icon {
-    order: 1;
+.icon-container {
+    grid-area: icon;
+    text-align: center;
+    padding:40px 0px 0px 14px;
+}
+
+.description-container {
+    grid-area: description;
+    text-align: center;
+    padding:84px 16px 0px 0px;
 }
 
 .temperature-container {
-    order: 3;
-}
-
-.weather-description {
-    order: 4;
+    grid-area: temperature;
+    text-align: center;
+    padding-top:40px;
+    background-color: rgba(0, 0, 0, 0.048);
 }
